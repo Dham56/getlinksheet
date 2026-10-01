@@ -45,7 +45,8 @@ body { font-family: 'Segoe UI', -apple-system, Arial, sans-serif; color: #2c3e50
 .hero h1 { font-size: 2.4em; margin-bottom: 10px; font-weight: 700; }
 .hero .hook { font-size: 1.55em; font-weight: 600; opacity: 0.97; margin-bottom: 8px; }
 .hero .subtagline { font-size: 1.08em; opacity: 0.9; margin: 0 auto 22px; max-width: 620px; }
-.hero .price { font-size: 1.35em; font-weight: 600; margin-bottom: 26px; }
+.hero .price { font-size: 1.35em; font-weight: 600; margin-bottom: 6px; }
+.hero .trial { font-size: 1.1em; font-weight: 600; margin-bottom: 26px; }
 .stores { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; max-width: 640px; margin: 0 auto; }
 .store-btn {
   display: inline-block; background: #fff; color: #1a5276;
@@ -67,7 +68,8 @@ body { font-family: 'Segoe UI', -apple-system, Arial, sans-serif; color: #2c3e50
 .step h3 { font-size:1.05em; color:#1a5276; margin-bottom:4px; }
 .step p { font-size:0.95em; color:#5d6d7e; }
 .bottom-cta { text-align:center; padding: 10px 20px 60px; }
-.bottom-cta a { display:inline-block; background:#1a5276; color:#fff; padding:15px 40px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.1em; }
+.bottom-cta a.alt { background:#fff; color:#1a5276; border:2px solid #1a5276; }
+.bottom-cta a { margin: 6px; display:inline-block; background:#1a5276; color:#fff; padding:15px 40px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.1em; }
 footer { text-align:center; padding:24px; font-size:0.85em; color:#888; }
 footer a { color:#888; }
 @media (max-width: 700px){ .steps{ grid-template-columns:1fr; } .store-btn{ min-width: 260px; } }
@@ -80,9 +82,10 @@ footer a { color:#888; }
   <p class="hook">The hyperlink button Excel forgot.</p>
   <p class="subtagline">Auto-hyperlink an entire folder of files to matching cells in any Excel spreadsheet — in one click. No Microsoft Excel required.</p>
   <p class="price">$14.99 — one-time. No subscription, ever.</p>
+  <p class="trial">Windows: try it free for 15 days on the Microsoft Store.</p>
   <div class="stores">
     <a class="store-btn" href="https://apps.apple.com/app/linksheet-pro/id6760908326">Download on the Mac App Store<small>for macOS 12+</small></a>
-    <a class="store-btn" href="https://apps.microsoft.com/detail/9ntmnm2f9m5q">Get it on the Microsoft Store<small>for Windows 10/11</small></a>
+    <a class="store-btn" href="https://apps.microsoft.com/detail/9ntmnm2f9m5q">Get it on the Microsoft Store<small>for Windows 10/11 · free 15-day trial</small></a>
     <a class="store-btn gumroad" href="https://dhamster44.gumroad.com/l/linksheet">Buy on Gumroad<small>direct download for macOS</small></a>
   </div>
   <p class="trust">Available for <strong>Mac</strong> (Mac App Store) and <strong>Windows</strong> (Microsoft Store) &nbsp;·&nbsp; ⚡ Hundreds of files linked in seconds &nbsp;·&nbsp; 🔒 100% local</p>
@@ -101,7 +104,8 @@ footer a { color:#888; }
 </div>
 
 <div class="bottom-cta">
-  <a href="https://apps.apple.com/app/linksheet-pro/id6760908326">Get LinkSheet Pro — $14.99</a>
+  <a href="https://apps.microsoft.com/detail/9ntmnm2f9m5q">Try it free on Windows — 15 days</a>
+  <a class="alt" href="https://apps.apple.com/app/linksheet-pro/id6760908326">Get it for Mac — $14.99</a>
 </div>
 
 <footer>
