@@ -113,5 +113,15 @@ footer a { color:#888; }
   Microsoft and Excel are trademarks of Microsoft Corporation. LinkSheet Pro is an independent product, not affiliated with or endorsed by Microsoft.
 </footer>
 
+<script>
+  // Google Ads "Store click" conversion (AW-18206265419/kjrZCMm3so0dEMugtulD): fires once per click on
+  // any store/Gumroad button. Link-click, no value, count one. No personal data is sent.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || typeof gtag !== 'function') return;
+    if (!/apps\.microsoft\.com|apps\.apple\.com|gumroad\.com/.test(a.href)) return;
+    gtag('event', 'conversion', { 'send_to': 'AW-18206265419/kjrZCMm3so0dEMugtulD', 'transport_type': 'beacon' });
+  }, true);
+</script>
 </body>
 </html>
